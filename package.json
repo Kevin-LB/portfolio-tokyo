@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-tower",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite --port ${PORT:-3003} --strictPort",
+    "build": "tsc --noEmit && vite build && vite build --ssr server/index.ts",
+    "preview": "vite preview --port ${PORT:-3004} --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import ./scripts/ts-resolve.mjs --test 'src/**/*.test.ts' 'server/*.test.ts' 'deploy/*.test.ts'",
+    "start": "node dist-server/index.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/instrument-sans": "5.3.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/three": "0.186.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.4"
+  }
+}

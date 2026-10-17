@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "tower-dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3003 },
+    { "name": "tower-preview", "runtimeExecutable": "npm", "runtimeArgs": ["run", "preview"], "port": 3004 }
+  ]
+}

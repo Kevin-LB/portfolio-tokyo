@@ -1,0 +1,10 @@
+node_modules
+dist
+.shots
+.git
+.claude
+*.log
+.data
+dist-server
+.env
+docs/*.jpg
